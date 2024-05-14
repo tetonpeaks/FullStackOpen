@@ -1,0 +1,107 @@
+###
+GET http://localhost:3001
+
+###
+GET http://localhost:3001/api/users/
+Content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhcmFoIiwiaWQiOiI2MzY0ODcwNGVjNDU2YWQxOGVjMDE1YzYiLCJpYXQiOjE2Njc1MzQ5MjYsImV4cCI6MTY2NzUzODUyNn0.kUipar6NLIkjy-ApDbl01x6ZZmn30KYu8UmIjxxiftA
+
+
+###
+GET http://localhost:3001/api/blogs
+
+###
+GET http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhcmFoIiwiaWQiOiI2MzY0ODcwNGVjNDU2YWQxOGVjMDE1YzYiLCJpYXQiOjE2Njc1MzQ5MjYsImV4cCI6MTY2NzUzODUyNn0.kUipar6NLIkjy-ApDbl01x6ZZmn30KYu8UmIjxxiftA
+
+{
+    "username": "sarah",
+    "pw": "123"
+}
+
+###
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+    "username": "bd",
+    "pw": "mikeisagoober"
+}
+
+###
+POST https://floating-waters-44841.herokuapp.com/api/login
+Content-Type: application/json
+
+{
+    "username": "sarah",
+    "pw": "123"
+}
+
+
+
+###
+POST http://localhost:3001/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "username": "testuser",
+    "name": "Test User",
+    "pw": "testuser"
+}
+
+###
+DELETE http://localhost:3001/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "username": "mary",
+    "name": "Marie",
+    "pw": "1234"
+}
+
+###
+POST http://localhost:3001/api/blogs HTTP/1.1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhcmFoIiwiaWQiOiI2MzUyZTMwM2MyNjY4YTZlNDg2Y2JhZDciLCJpYXQiOjE2NjYzNzY1MzQsImV4cCI6MTY2NjM4MDEzNH0.ZqWigoYpv9TQ1tx-YT3CZwBSEy_UXc9W4wKT0EU5Iaw
+
+{
+    "title": "Post 9: sarah",
+    "author": "Sarah",
+    "url": "https://www.google.com",
+    "likes": "1"
+}
+
+###
+POST http://localhost:3001/api/blogs HTTP/1.1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJvYmJ5IiwiaWQiOiI2MzY0Mjg5ZDI5NjY4ZWZlYzA4NGYwNGEiLCJpYXQiOjE2Njc1MDg0NDIsImV4cCI6MTY2NzUxMjA0Mn0.zeH2HljdcR07d9_Y8bRjzDhNfj9LihyCtcmjrGKUhSQ
+
+{
+    "title": "Post 4: sally",
+    "author": "sally",
+    "url": "https://www.google.com",
+    "likes": "1"
+}
+
+###
+POST http://localhost:3001/api/blogs HTTP/1.1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJvYmJ5IiwiaWQiOiI2MzY0Mjg5ZDI5NjY4ZWZlYzA4NGYwNGEiLCJpYXQiOjE2Njc1MTA0NTksImV4cCI6MTY2NzUxNDA1OX0.X6GQJWYXe5RZGF-KFwB6GNg0XbAQcGI0MsQXFj7VC8A
+
+{
+    "title": "Post 2: bobby",
+    "author": "Bobby",
+    "url": "https://www.google.com",
+    "likes": "1"
+}
+
+###
+DELETE http://localhost:3001/api/blogs/6369954a74c38b6546d05d57 HTTP/1.1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJvYmJ5IiwiaWQiOiI2MzY0M2Q3NzMxNTdmYmVlY2E0YjllN2IiLCJpYXQiOjE2Njc4ODE4MTksImV4cCI6MTY2Nzg4NTQxOX0.hdiAvaaV4btDuWKRAvdyzbWs5PCFBW0UKVT9P18IPoA
+
+###
+DELETE https://floating-waters-44841.herokuapp.com/api/blogs/6364a4048de3c8f160e696c7
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJvYmJ5IiwiaWQiOiI2MzY0M2Q3NzMxNTdmYmVlY2E0YjllN2IiLCJpYXQiOjE2Njc5NjYzOTksImV4cCI6MTY2Nzk2OTk5OX0.fM8j4-q6EYWW5aCaPmRbq4Jc6oqUxMAD_USlikSlI5s

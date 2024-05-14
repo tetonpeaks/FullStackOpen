@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, Inter, sans-serif;
+  background-color: #282D35;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  padding: 30px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.div-app-title {
+  text-align: center;
+  border-bottom: 2px solid white;
+  padding: 10px;
+}
+
+.blogStyle {
+    padding: 10px;
+    border: 2px solid;
+    border-width: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.msg {
+  color: white;
+}
+
+.div-PostForm {
+  padding: 1%;
+  color: white;
+}
+
+.div-LoginForm {
+  padding: 1%;
+  text-align: right;
+  color: white;
+}
+
+.div-logout {
+  padding: 1%;
+  text-align: right;
+}
+
+.div-notify {
+  padding-top: 1%;
+  text-align: center;
+  color: white;
+}
